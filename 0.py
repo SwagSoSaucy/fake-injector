@@ -59,7 +59,7 @@ button.config(command=enter)
 b = Button(root,text='LOAD',font=('Arial',40,'bold'),fg='#FFA500',bg="#000000")
 b.pack(side=TOP, padx=30, pady=30)
 
-b.config()
+b.config(command=worm)
     
 
 
@@ -72,7 +72,7 @@ button.pack(side=LEFT, padx=10, pady=10)
 
 input()
 
-root.iconbitmap("DukeWithHelmet.ico")
+
 
 root.mainloop()
 
